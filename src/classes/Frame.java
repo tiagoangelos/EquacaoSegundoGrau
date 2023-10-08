@@ -309,11 +309,27 @@ public class Frame extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
     
     private void menuAboutMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_menuAboutMouseClicked
-        JOptionPane.showMessageDialog(null, "Em matemática, uma equação quadrática ou equação do segundo grau é uma equação polinomial de grau dois.\n A forma geral deste tipo de equação é: y:= f(x) = ax^{2}+bx+c=0, em que x é uma variável, sendo a, b e c constantes,\n com a ≠ 0.");
+        JOptionPane.showMessageDialog(null,
+                "Sobre\n\n"
+              + "Em matemática, uma equação quadrática ou equação\n"
+              + "do segundo grau é uma equação polinomial de grau\n"
+              + "dois. A forma geral deste tipo de equação\n"
+              + "é: y:= f(x) = ax^{2}+bx+c=0, em que x é uma\n"
+              + "variável, sendo a, b e c constantes,\n"
+              + "com a ≠ 0."
+              , "Sobre", JOptionPane.INFORMATION_MESSAGE
+        );
     }//GEN-LAST:event_menuAboutMouseClicked
 
     private void menuHelpMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_menuHelpMouseClicked
-        JOptionPane.showMessageDialog(null, "Para usar é bem simples, basta informar os valores de A, B, C Respectivamente.\n Após isso clique em Calcular, e então os resultados serão exibidos abaixo.");
+        JOptionPane.showMessageDialog(null, 
+                "Ajuda\n\n"
+              + "Para usar é bem simples, basta informar os valores\n"
+              + "de A, B, C Respectivamente. Após isso clique em\n"
+              + "Calcular, e então os resultados serão exibidos\n"
+              + "abaixo."
+              , "Ajuda", JOptionPane.INFORMATION_MESSAGE
+        );
     }//GEN-LAST:event_menuHelpMouseClicked
 
     private void menuExitMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_menuExitMouseClicked
@@ -338,7 +354,12 @@ public class Frame extends javax.swing.JFrame {
         if(spinnerA != 0){  
             return true;
         }else{
-            JOptionPane.showMessageDialog(null, "O valor de 'A' não pode ser igual á '0' pois caso fosse\n não seria uma equação do segundo grau!");
+            JOptionPane.showMessageDialog(null,
+                    "Aviso!\n\n"
+                  + "O valor de 'A' não pode ser igual á '0' pois caso\n"
+                  + "fosse não seria uma equação do segundo grau!\n"
+                  , "Aviso", JOptionPane.WARNING_MESSAGE
+            );
             return false;
         }
     }
